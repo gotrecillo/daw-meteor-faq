@@ -1,0 +1,19 @@
+<body>
+  {{renderPage}}
+</body>
+
+<template name="layout">
+  {{> navbar}}
+  <div class="row">
+    <div class="large-12 columns">
+      {{> yield}}
+    </div>
+  </div>
+
+  <script>
+    // Initialize foundation on document ready;
+    $(() =>{
+      $(document).foundation();
+    })
+  </script>
+</template>
